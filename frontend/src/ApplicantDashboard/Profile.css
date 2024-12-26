@@ -1,0 +1,120 @@
+/* Overall container styling */
+.dashboard-container {
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+.profile-container {
+  margin-left: 250px; /* Assuming sidebar is 250px */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+
+
+.form-container h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+
+/* Input and Textarea Styling */
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="number"],
+.form-container input[type="file"],
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 7px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+/* Focus state for form fields */
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+.form-container button {
+  width: 100%;
+  max-width: 100px;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling for download link */
+.form-container a {
+  font-size: 14px;
+  color: #007BFF;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+/* Textarea styling */
+.form-container textarea {
+  height: 60px;
+  resize: vertical;
+}
+
+/* Add space between fields */
+.form-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+      flex-direction: column;
+  }
+
+  .profile-container {
+      margin-left: 0;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="date"],
+  .form-container input[type="number"],
+  .form-container input[type="file"],
+  .form-container textarea,
+  .form-container select {
+      width: 100%;
+  }
+}

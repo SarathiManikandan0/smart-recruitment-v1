@@ -1,0 +1,94 @@
+.dashboard-container{
+  display: flex;
+}
+.job-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between the cards */
+  padding: 20px; /* Padding around the container */
+}
+
+.job-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  width: 280px; /* Fixed width for uniformity */
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px); /* Hover effect for lift */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.job-icon {
+  font-size: 30px; 
+  color: #6c757d; 
+}
+.job-loc {
+  font-size: 30px;
+  margin-right: 100px; 
+}
+.job-emp {
+  font-size: 30px;
+  margin-left: 30px; 
+}
+.job-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.job-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.job-details span {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.job-card .tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.job-card .tag {
+  background-color: #f5f5f5;
+  color: #555;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,87 @@
+    .landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  .landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .landing-content {
+    max-width: 50%;
+  }
+  
+  .landing-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .landing-description {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 20px;
+    margin-left: 150px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    
+  }
+  
+  .contact-btn {
+    background-color: #007bff;
+  }
+  
+  .contact-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .read-btn {
+    background-color: #17a2b8;
+  }
+  
+  .read-btn:hover {
+    background-color: #117a8b;
+  }
+  
+  .landing-image img {
+    max-width: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .landing {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .landing-content {
+      max-width: 100%;
+    }
+  
+    .landing-image img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  

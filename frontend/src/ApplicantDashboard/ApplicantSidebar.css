@@ -1,0 +1,46 @@
+.applicantsidebar {
+  width: 20%;
+  background-color: #1c1c1c; 
+  padding: 20px;
+  color: white;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.ListItem-root {
+  margin: 10px 0; /* Add some space between items */
+  border-radius: 4px; /* Rounded corners for a softer look */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.ListItem-root:hover {
+  background-color: #333333; /* Darker background on hover */
+}
+
+.ListItemText-primary {
+  font-weight: bold; /* Bold text for better readability */
+  color: #e0e0e0; /* Lighter text color for contrast */
+}
+
+.ListItemIcon-root {
+  color: #e0e0e0;
+}
+
+.ListItem-root:active {
+  background-color: #444444; /* Slightly different color on click */
+}
+
+.MuiSvgIcon-root {
+  font-size: 1.3rem; /* Adjust icon size for balance */
+}
+
+/* If using a media query for responsiveness */
+@media (max-width: 768px) {
+  .applicantsidebar {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px;
+  }
+}
